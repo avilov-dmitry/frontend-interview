@@ -32,19 +32,9 @@ let sayName = dog.sayName;
 
 sayName();
 ```
-Возможные ответы:
-* Нужно добавить bind
+Ответ: Нужно добавить bind
 ```js
 let sayName = dog.sayName.bind(dog);
-```
-* Изменить объявление dog
-```js
-let dog = {
-  name: 'doggo',
-  sayName: function() {
-    console.log('=== name ===', this.name);
-  }
-};
 ```
 
 
