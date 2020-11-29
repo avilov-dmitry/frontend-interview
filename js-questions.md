@@ -65,6 +65,18 @@
     // undefined (a)
     ```
 
+5. Функции
+    ```js
+    function foo () {
+       return Array.from(arguments).reduce((result, next) => {
+           return result + next
+       }, 0)
+    };
+    
+    console.log(foo(1, 3, 5, 10)); // 19
+    console.log(foo(2, 5, 10, 20, 30)); //67
+    ```
+   
 #### Массивы
 1. Вернуть уникальный массив(set)
     ```js
