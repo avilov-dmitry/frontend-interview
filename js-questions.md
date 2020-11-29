@@ -77,6 +77,16 @@
     console.log(foo(2, 5, 10, 20, 30)); //67
     ```
    
+6. Document
+    ```js
+    const all = document.querySelectorAll('*');
+    
+    function disableLinks () {
+    
+    }
+    
+    ```
+
 #### Массивы
 1. Вернуть уникальный массив(set)
     ```js
