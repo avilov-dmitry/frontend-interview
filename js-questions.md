@@ -123,4 +123,35 @@
     console.log(sum(5)(-1)(2))
     console.log(sum(6)(-1)(-2)(-3))
     console.log(sum(0)(1)(2)(3)(4)(5))
+
+   
+#### Event loop
+1. Что будет выведено в консоль
+    ```js
+    const promise = () => new Promise(res => res())
+    
+    function testOne() {
+        console.log('1')
+    }
+    
+    async function testTwo() {
+        console.log('2')
+        await promise();
+        console.log('3')
+    }
+    
+    console.log('foo');
+    testTwo()
+    console.log('bar')
+    testOne()
+    
+    // foo
+    // 2
+    // bar
+    // 1
+    // 3
     ```
+ 2. Что будет выведено в консоль
+ ```js
+
+```
