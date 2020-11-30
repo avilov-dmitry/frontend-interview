@@ -222,3 +222,18 @@
     // promiseResult 2
     // timerResult 4
     ```
+    
+    
+    
+   ```js
+   let a = {
+       b: 1,
+       c: function() { 
+         console.log(this.b)
+       },
+   }
+   
+   a.c();
+   
+   setTimeout(a.c, 1000);
+```
