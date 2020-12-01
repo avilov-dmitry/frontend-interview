@@ -225,15 +225,30 @@
     
     
     
-   ```js
-   let a = {
-       b: 1,
-       c: function() { 
-         console.log(this.b)
-       },
-   }
-   
-   a.c();
-   
-   setTimeout(a.c, 1000);
+```js
+let a = {
+   b: 1,
+   c: this.b,
+   d: function() { 
+     console.log(this.b)
+   },
+}
+
+console.log('a.b', a.b)
+console.log('a.d', a.d())
+
+setTimeout(a.d, 1000);
+```
+
+
+#### JSON
+
+Что будет выведено на экран:
+```js
+const t = JSON.stringify({
+    foo: function() {
+        return 123;
+    }
+})
+console.log(t)
 ```
