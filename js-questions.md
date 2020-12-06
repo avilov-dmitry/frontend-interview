@@ -1,7 +1,8 @@
 # Вопросы по JS
 
-[Массивы](js/arrays.md)
-[Функции](js/function.md)
+* [Типы](js/types.md)
+* [Массивы](js/arrays.md)
+* [Функции](js/function.md)
 
 1. Вопрос на поднятие(hoisting)
     ```js
@@ -39,19 +40,7 @@
     let sayName = dog.sayName.bind(dog);
     ```
 
-3. Сравнение типов
-    ```js
-    // Что будет в консоли:
-    var o = {};
-    var a = [];
-    
-    console.log(o == a); // false
-    console.log(o === a);  // false
-    console.log(typeof o == typeof a);  // true
-    console.log(typeof o === typeof a);  // true
-    console.log(null === null); // true
-    console.log(NaN === NaN); // false
-    ```
+
 
 4. Поднятие + setTimeout
     ```js
@@ -68,18 +57,6 @@
     // undefined (a)
     ```
 
-5. Функции
-    ```js
-    function foo () {
-       return Array.from(arguments).reduce((result, next) => {
-           return result + next
-       }, 0)
-    };
-    
-    console.log(foo(1, 3, 5, 10)); // 19
-    console.log(foo(2, 5, 10, 20, 30)); //67
-    ```
-   
 6. Document
     ```js
     const all = document.querySelectorAll('*');
