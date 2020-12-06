@@ -71,3 +71,25 @@
     // timerResult 4
     ```
     
+3. Что будет в консоли
+    ```js
+    let a = 10;
+    
+    setTimeout(() => {
+      a = 15;
+      console.log('timeOut', a)
+    });
+    
+    const promise = new Promise((resolve) => {
+      a = 5;
+      console.log('promise', a)
+      resolve(a)
+    });
+    
+    promise.then(() => {
+      a = 25;
+      console.log('then', a)
+    });
+    
+    console.log(a);
+    ```

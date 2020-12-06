@@ -11,15 +11,14 @@
 // Если символ встречается 1 раз, он остается без изменений;
 // Если символ повторяется более 1 раза, к нему добавляется количество повторений.
 
-function foo(str) {
-  var result = '';
-  var last = '';
-  var temp = 1;
+function countLetters(str) {
+  let result = '';
+  let last = '';
+  let temp = 1;
   
-  for(var i = 0; i < str.length; i++) {
+  for(let i = 0; i < str.length; i++) {
     if (i === 0) {
       last = str[i];
-
     } else {
       if(last !== str[i]) {
         result +=  temp !== 1 ? last + temp : last;
@@ -35,5 +34,5 @@ function foo(str) {
 }
 
 
-console.log(foo('AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB'));
+console.log(countLetters('AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB'));
 ```

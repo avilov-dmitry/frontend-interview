@@ -1,5 +1,7 @@
 # Массивы
 
+[Как остановить forEach](https://zen.yandex.ru/media/nuancesprog/pochemu-nelzia-preryvat-cikl-foreach-v-javascript-5f909bf9be60787eb9943ed9)
+
 1. Вернуть уникальный массив(set)
     ```js
     const t = [1,2,3,3,4,5,6,5,7]
