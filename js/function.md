@@ -1,4 +1,4 @@
-# Функции
+### Функции
 
 1. Какие есть способы объявления функций.
     [Подробнее здесь](https://learn.javascript.ru/function-declaration-expression)
@@ -52,3 +52,37 @@
     console.log(sum(6)(-1)(-2)(-3))
     console.log(sum(0)(1)(2)(3)(4)(5))
    ```
+
+4. Необходимо, чтобы этот код выводил в лог doggo, но он выводит лишь undefined.
+    ```js
+    let dog = {
+      name: 'doggo',
+      sayName() {
+        console.log('=== name ===', this.name);
+      }
+    };
+    
+    let sayName = dog.sayName;
+    
+    sayName();
+    ```
+    Ответ: Нужно добавить bind
+    ```js
+    let sayName = dog.sayName.bind(dog);
+    ```
+   
+5. Что будет в консоли?
+    ```js
+    let a = {
+       b: 1,
+       c: this.b,
+       d: function() { 
+         console.log(this.b)
+       },
+    }
+    
+    console.log('a.b', a.b)
+    console.log('a.d', a.d())
+    
+    setTimeout(a.d, 1000);
+    ```

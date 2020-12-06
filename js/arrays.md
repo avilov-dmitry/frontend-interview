@@ -1,4 +1,4 @@
-# Массивы
+### Массивы
 
 [Как остановить forEach](https://zen.yandex.ru/media/nuancesprog/pochemu-nelzia-preryvat-cikl-foreach-v-javascript-5f909bf9be60787eb9943ed9)
 
@@ -59,4 +59,21 @@
     getRandomMatrix(10, 20).forEach(row => {
         console.log(row.join(" - "))
     })
+    ```
+   
+4. Объеденить массивы 
+    ```js
+    const arr1 = [1, 3, 5, 3, 8, 1, 12];
+    const arr2 = [3, 4, 5, 9, 15, 18];
+    
+    function concatenateArrays (data1, data2) { }
+    
+    concatenateArrays(arr1, arr2) // [1, 3, 5, 8, 12, 4, 9, 15,18]
+    ```
+   Решение
+    ```js
+    const concatenateArrays = (data1, data2) => {
+       let exist = {};
+       return data1.concat(data2).filter(x => !exist[x] ? exist[x] = true : false);
+    }
     ```
