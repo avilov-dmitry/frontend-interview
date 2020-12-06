@@ -27,3 +27,28 @@
      console.log(foo(1, 3, 5, 10)); // 19
      console.log(foo(2, 5, 10, 20, 30)); //67
      ```
+   
+3. Реализовать функцию суммирующую аргументы 
+    [Подробнее тут](https://learn.javascript.ru/task/sum-many-brackets)
+    ```js
+    function sum(a) {
+        // Создаем переменную с суммой
+        let result = a;
+    
+        // Создаем колбэк, который будет добавлять новый аргумент к сумме
+        const callback = (b) => {
+            result += b;
+            return callback;
+        }
+    
+        // Переопреденяем toString, чтобы при выводе в консоль отображалась сумма
+        callback.toString = () => result;
+    
+        return callback;
+    }
+    console.log(sum(1)(2))
+    console.log(sum(1)(2)(3))
+    console.log(sum(5)(-1)(2))
+    console.log(sum(6)(-1)(-2)(-3))
+    console.log(sum(0)(1)(2)(3)(4)(5))
+   ```
