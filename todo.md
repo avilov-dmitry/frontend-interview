@@ -4,6 +4,11 @@ https://developer.mozilla.org/ru/docs/Web/Performance/How_browsers_work
 
 ! https://zen.yandex.ru/media/nuancesprog/pochemu-nelzia-preryvat-cikl-foreach-v-javascript-5f909bf9be60787eb9943ed9
 ! https://learn.javascript.ru/array-iteration
+https://learn.javascript.ru/object-conversion
+
+! https://habr.com/ru/post/463125/
+
+
 
 MOBX
 HTTP / HTTP2
@@ -16,7 +21,6 @@ https://yandex.ru/turbo/internet-technologies.ru/s/articles/zhiznennyy-cikl-stra
 
 ! https://learn.javascript.ru/generator
 
-! https://habr.com/ru/post/463125/
 
 ! https://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/
 
