@@ -17,3 +17,4 @@
     console.log(NaN === NaN); // false
     ```
    
+4. Symbol - https://learn.javascript.ru/symbol
