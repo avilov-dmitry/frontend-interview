@@ -4,6 +4,7 @@
     https://habr.com/ru/company/dataart/blog/304138/
     
 2. CORS
+    * Что это / зачем нужен?
     * Отрабатывает для всех хзапросов?
 
 3. Cookie / Local Storage / Session Storage
