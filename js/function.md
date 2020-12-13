@@ -86,3 +86,18 @@
     
     setTimeout(a.d, 1000);
     ```
+   
+6.
+    ```js
+    var foo = 1; 
+    
+    (function f() {
+      if(foo) {
+        var foo = 2 
+      }
+      console.log(foo)
+    })()
+   
+    // undefined
+    // При выполнении функции будет поднятие переменной foo, при проверке условия будет undefined
+    ```
