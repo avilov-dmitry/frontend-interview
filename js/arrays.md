@@ -1,6 +1,14 @@
 ### Массивы
 
-1. [Как остановить forEach](https://zen.yandex.ru/media/nuancesprog/pochemu-nelzia-preryvat-cikl-foreach-v-javascript-5f909bf9be60787eb9943ed9)
+* [Как остановить forEach](https://zen.yandex.ru/media/nuancesprog/pochemu-nelzia-preryvat-cikl-foreach-v-javascript-5f909bf9be60787eb9943ed9)
+
+* Что будет в консоли
+    ```js
+    const a = [];
+    a[100] = 10;
+    a
+    ```
+
 
 1. Вернуть уникальный массив(set)
     ```js

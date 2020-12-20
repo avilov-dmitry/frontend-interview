@@ -1,5 +1,10 @@
 ### Event loop
 
+* Способы создать микротаску:
+    - fetch
+    - promise
+    - queueMicrotask
+
 1. Что будет выведено в консоль
     ```js
     const promise = () => new Promise(res => res())

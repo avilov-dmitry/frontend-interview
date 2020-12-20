@@ -18,3 +18,13 @@
     ```
    
 4. Symbol - https://learn.javascript.ru/symbol
+
+5. Разница между var и let
+    ```js
+    var a = 1
+    var a = 5 // Не будет ошибки, a = 5
+    
+    
+    let a = 1
+    let a = 5 // будет ошибка
+    ```
