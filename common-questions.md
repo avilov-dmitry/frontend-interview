@@ -3,10 +3,7 @@
 1. Как работает браузер
     https://habr.com/ru/company/dataart/blog/304138/
     
-    Reflow
-    Repaint
-    Composite
-    
+    [Reflow, Repaint, Composite](https://rashidovr.medium.com/reflow-repaint-composite-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D0%B8-%D0%BA%D0%B0%D0%BA-%D1%8D%D1%82%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-a777c5760295)
     
 2. CORS
     * Что это / зачем нужен?

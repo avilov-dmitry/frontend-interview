@@ -43,7 +43,7 @@ function fn() {
     console.log(x); //(3) undefined
     x += 10;
 
-    console.log(x); //(4) NaN / 10
+    console.log(x); //(4) NaN
     console.log(typeof x); //(5) number
     var x = 13;
     console.log(x); //(6) 13

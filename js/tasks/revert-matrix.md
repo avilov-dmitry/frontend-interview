@@ -12,21 +12,23 @@
 
 ```js
 function revertMatrix(matrix) {
-	return matrix.reduce((result, row, index) => {
-  	if(result.length === 0) {
-    	row.forEach(i => result.push([i]))
-    } 
-    if(index > 0) {
-    	row.forEach((i, rowIndex) => {
-            if(result[index + rowIndex]) {
-                result[index + rowIndex].push(i)
-            } else {
-                result.push([i])
-            }
-        })
-    }    
-    return result.map(i => i.reverse())
-	}, [])
+	return matrix.reduce(
+        (result, row, index) => {
+            if(result.length === 0) {
+                row.forEach(i => result.push([i]))
+            } 
+            if(index > 0) {
+                row.forEach((i, rowIndex) => {
+                    if(result[index + rowIndex]) {
+                        result[index + rowIndex].push(i)
+                    } else {
+                        result.push([i])
+                    }
+                })
+            }    
+            return result.map(i => i.reverse())
+	    },
+    [])
 } 
 
 revertMatrix([])
