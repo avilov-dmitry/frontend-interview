@@ -1,5 +1,7 @@
 # Вопросы к собеседованию на Frontend-разработчика
 
+* [План собеседования для junior](junior-interview.md)
+
 * [Общие вопросы](common-questions.md)
 * [Вопросы по Верстке](layout-questions.md)
 * [Вопросы по JS](js/js-questions.md)

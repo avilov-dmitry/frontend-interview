@@ -26,6 +26,9 @@
     // flat 
     console.log(t.flat(Infinity)
     ```
+    
+    Или
+
     ```js
     // Сделать функцию с рекурсией
     const foo = (arr) => {
@@ -41,9 +44,9 @@
         return result;
     }
    
-   // или
+    // или
    
-   const foo2 = b => b.reduce((acc, i) => Array.isArray(i) ? [...acc, ...foo2(i)] : [...acc, i], []);
+    const foo2 = b => b.reduce((acc, i) => Array.isArray(i) ? [...acc, ...foo2(i)] : [...acc, i], []);
     
     foo([1,[2,3,[4],5],6,[7,[8]]]);
     foo2([1,[2,3,[4],5],6,[7,[8]]]);
